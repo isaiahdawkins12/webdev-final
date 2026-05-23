@@ -30,6 +30,14 @@ main {
   padding: 20px;
 }
 
+main a {
+  color: #00ff66;
+}
+
+main a:hover {
+  color: #00ffaa;
+}
+
 section {
   border: 1px solid #00ff66;
   padding: 16px;
@@ -38,6 +46,58 @@ section {
 
 h2 {
   margin-top: 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+#contact-form label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  background-color: #000;
+  color: #00ff66;
+  border: 1px solid #00ff66;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #00ffaa;
+}
+
+#contact-form button {
+  background-color: #000;
+  color: #00ff66;
+  border: 1px solid #00ff66;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding: 8px 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+#contact-form button:hover {
+  background-color: #00ff66;
+  color: #000;
+}
+
+.linkedin {
+  margin-top: 20px;
+}
+
+.linkedin a {
+  color: #00ff66;
 }
 
 footer {
