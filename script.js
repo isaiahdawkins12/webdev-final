@@ -25,3 +25,32 @@ async function runBootSequence() {
 }
 
 runBootSequence();
+
+// fake terminal-style loading sequence when the contact form is submitted
+const SEND_LINES = [
+  "> validating input...",
+  "> encrypting message...",
+  "> connecting to mail server...",
+  "> transmitting data...",
+  "> message received. thanks for reaching out!",
+];
+
+function setupContactForm() {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("contact-status");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    form.style.display = "none";
+    status.textContent = "";
+
+    for (const line of SEND_LINES) {
+      const p = document.createElement("p");
+      p.textContent = line;
+      status.appendChild(p);
+      await wait(600);
+    }
+  });
+}
+
+setupContactForm();
