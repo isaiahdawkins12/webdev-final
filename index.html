@@ -1,90 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaiah's Webdev Final</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaiah's Webdev Final</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="boot-screen">
+      <pre id="boot-text"></pre>
+    </div>
 
-  <div id="boot-screen">
-    <pre id="boot-text"></pre>
-  </div>
+    <nav id="navbar">
+      <span class="prompt">isaiah@webdev:~$<span class="cursor">_</span></span>
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
 
-  <nav id="navbar">
-    <span class="prompt">isaiah@webdev:~$<span class="cursor">_</span></span>
-    <a href="#about">about</a>
-    <a href="#work">work</a>
-    <a href="#projects">projects</a>
-    <a href="#contact">contact</a>
-  </nav>
+    <main>
+      <h1 class="visually-hidden">Isaiah Dawkins - Portfolio</h1>
 
-  <main>
+      <section id="about">
+        <details>
+          <summary><h2>&gt; about</h2></summary>
+          <p>
+            i'm isaiah. i'm a software development engineer with experience
+            validating wi-fi and wireless systems on various platforms and
+            developing automation and software to streamline processes and
+            improve efficiency.
+          </p>
+          <p>
+            i love gaming, socializing, reading a good book, skiing, and
+            learning more about technologies.
+          </p>
+        </details>
+      </section>
 
-    <section id="about">
-      <details>
-        <summary>&gt; about</summary>
-        <p>i'm isaiah. i'm a software development engineer with experience validating wi-fi and wireless systems on various platforms and developing automation and software to streamline processes and improve efficiency.</p>
-        <p>i love gaming, socializing, reading a good book, skiing, and learning more about technologies.</p>
-      </details>
-    </section>
+      <section id="work">
+        <details>
+          <summary><h2>&gt; work</h2></summary>
+          <ul>
+            <li>coming soon - software development engineer in test @ apple</li>
+            <li>current - systems software engineer intern @ intel</li>
+            <li>previous - line cooking at various restaurants in portland.</li>
+          </ul>
+        </details>
+      </section>
 
-    <section id="work">
-      <details>
-        <summary>&gt; work</summary>
-        <ul>
-          <li>coming soon - software development engineer in test @ apple</li>
-          <li>current - systems software engineer intern @ intel</li>
-          <li>previous - line cooking at various restaurants in portland.</li>
-        </ul>
-      </details>
-    </section>
+      <section id="projects">
+        <details>
+          <summary><h2>&gt; projects</h2></summary>
+          <ul>
+            <li>
+              nodesniffer ap analyzer utility - intel (cant share repo,
+              confidential)
+            </li>
+            <li>
+              wi-fi test suite client automation framework - intel (cant share
+              repo, confidential)
+            </li>
+            <li>
+              epl point of sales system - backend integration - portland state
+              university -
+              <a
+                href="https://github.com/isaiahdawkins12/EPL-Check-In-POS"
+                target="_blank"
+                rel="noopener"
+                >github</a
+              >
+            </li>
+            <li>
+              agenteck -
+              <a
+                href="https://github.com/isaiahdawkins12/Agenteck"
+                target="_blank"
+                rel="noopener"
+                >github</a
+              >
+            </li>
+          </ul>
+        </details>
+      </section>
 
-    <section id="projects">
-      <details>
-        <summary>&gt; projects</summary>
-        <ul>
-          <li>nodesniffer ap analyzer utility - intel (cant share repo, confidential)</li>
-          <li>wi-fi test suite client automation framework - intel (cant share repo, confidential)</li>
-          <li>epl point of sales system - backend integration - portland state university - <a href="https://github.com/isaiahdawkins12/EPL-Check-In-POS" target="_blank" rel="noopener">github</a></li>
-          <li>agenteck - <a href="https://github.com/isaiahdawkins12/Agenteck" target="_blank" rel="noopener">github</a></li>
-        </ul>
-      </details>
-    </section>
+      <section id="contact">
+        <details>
+          <summary><h2>&gt; contact</h2></summary>
 
-    <section id="contact">
-      <details>
-        <summary>&gt; contact</summary>
+          <form id="contact-form">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required />
 
-        <form id="contact-form">
-          <label for="name">name:</label>
-          <input type="text" id="name" name="name" required>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required />
 
-          <label for="email">email:</label>
-          <input type="email" id="email" name="email" required>
+            <label for="message">message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-          <label for="message">message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">send</button>
+          </form>
 
-          <button type="submit">send</button>
-        </form>
+          <div id="contact-status"></div>
 
-        <div id="contact-status"></div>
+          <p class="linkedin">
+            find me on
+            <a
+              href="https://www.linkedin.com/in/isaiah-dawkins/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </p>
+        </details>
+      </section>
+    </main>
 
-        <p class="linkedin">
-          find me on
-          <a href="https://www.linkedin.com/in/isaiah-dawkins/" target="_blank" rel="noopener">LinkedIn</a>
-        </p> 
-      </details>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>isaiah dawkins - CS463 final project</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>isaiah dawkins - CS463 final project</p>
+    </footer>
+  </body>
 </html>

@@ -49,7 +49,9 @@ body {
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 #navbar a {
@@ -82,31 +84,6 @@ section {
 
 h2 {
   margin-top: 0;
-}
-
-details summary {
-  list-style: none;
-  cursor: pointer;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 12px;
-  user-select: none;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::before {
-  content: "[+] ";
-}
-
-details[open] summary::before {
-  content: "[-] ";
-}
-
-details summary:hover {
-  color: #00ffaa;
 }
 
 #contact-form {

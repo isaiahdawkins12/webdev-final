@@ -15,7 +15,7 @@ webdev-final/
 ├── index.html      main page with all sections
 ├── styles.css      terminal-themed styling
 ├── script.js       boot sequence + contact form handler
-└── README.md       
+└── README.md
 ```
 
 ## How to Run Locally
@@ -46,4 +46,3 @@ The following Mozilla Developer Network (MDN) reference pages were consulted for
 - [MDN: \<details\> element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 
 Anthropic's Claude was used as a collaborator to help walk through the code and explain concepts, particularly on the JavaScript implementations.
-
