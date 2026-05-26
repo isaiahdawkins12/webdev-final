@@ -8,6 +8,10 @@ https://isaiahdawkins12.github.io/webdev-final/
 
 https://github.com/isaiahdawkins12/webdev-final
 
+## Video Breakdown
+
+https://media.pdx.edu/media/t/1_82sadpgn
+
 ## Project Structure
 
 ```
